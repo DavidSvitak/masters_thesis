@@ -1,10 +1,12 @@
 from manim import *
 
+# manim -pql -s -o C:\\Users\\sweet\\masters_thesis\\img\\test.png python_scripts/manim_test.py ArrowsInCircles command for rendering class as image to custom file
+
 class ArrowsInCircles(Scene):
     def construct(self):
         # Parameters for the scene
         arrow_length = 1  # Length of each arrow
-        arrow_direction = RIGHT  # Direction of arrows
+        arrow_direction = UP  # Direction of arrows
         circle_radius = 0.5  # Radius of each circle
         circle_opacity = 0.3  # Transparency of circles
         grid_size = 3  # Number of rows and columns
@@ -35,4 +37,3 @@ class ArrowsInCircles(Scene):
 
         # Play a simple animation
         self.wait(2)  # Hold the scene for 2 seconds
-
